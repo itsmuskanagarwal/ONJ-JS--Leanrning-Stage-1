@@ -1,0 +1,15 @@
+mystr='muskan'
+mynum= 100
+mybool = true
+
+console.log(mystr)
+console.log(mynum)
+console.log(mybool)
+
+myNumber = 4
+myString = 'Variables are great.'
+myBoolean = false
+
+console.log("myNumber is equal to " + myNumber);
+console.log("myString is equal to " + myString);
+console.log("myBoolean is equal to " + myBoolean);
