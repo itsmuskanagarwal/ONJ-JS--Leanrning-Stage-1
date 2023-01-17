@@ -1,0 +1,165 @@
+arr =['hi',100,'hello',true]
+console.log(arr)
+console.log(arr[2])
+arr[4]='muskan'
+console.log(arr)
+
+arr = [1,2,3,4,5,6]
+
+for(let a =0; a<arr.length;a++)
+  {
+    console.log(arr[a])
+  }
+  
+var s = [];
+s.push(1);
+s.push(2);
+s.push(3);
+console.log(s)
+s.pop()
+console.log(s)
+
+arr =[1,2,3,4]
+x = arr.shift()
+x=arr.unshift(100)
+console.log(arr,x)
+
+arr = [1,2,3,4,5]
+arr1 = [11,12,13,14,15]
+arr2 = [121,122,123,124,125]
+
+delete arr[2]
+delete arr1[1]
+delete arr2[0]
+
+console.log(arr)
+
+// //sort 
+
+num=[4,7,3,9,12,57,1,75756,323,77]
+num.sort()
+console.log(num)
+num.reverse()
+console.log(num)
+
+// splice and slice
+let num=[1,2,3,4,5,6,7,8]
+num.splice(1,3,0,0)
+console.log(num)
+
+//loop
+// for , for in, while, do while
+
+// let sum=0
+// let n = prompt("Enter number:")
+// n = Number.parseInt(n) //conver input stri5ng into int
+// for(let i=1;i<=n;i++)
+//   {
+//     console.log(sum+i)
+//     sum=sum+i
+//   }
+// console.log(sum)
+
+
+console.log(arr1)
+console.log(arr2)
+
+let result =arr.concat(arr1,arr2)
+
+console.log(result)
+
+//for in loop
+arr = [1,2,3,4,5]
+
+// for (let a in arr)
+//   {
+//     console.log(a)
+//   }
+obj = {
+  1:'a',
+  2:'b',
+  3:'c'
+}
+
+// for(let a in obj)
+//   {
+//     console.log("Key is: "+a+' Value is: '
+//  +obj[a])
+//   }
+
+
+//for of
+// for(let a of arr)
+//   {
+//     console.log(a)
+//   }
+
+// while loop
+// let n = prompt("Enter a number:");
+// n = Number.parseInt(n);
+
+// let i=0;
+// while(i<=n)
+//   {
+//     console.log(i);
+//     i++;
+//   }
+  
+// while loop
+// let n = prompt("Enter a number:");
+// n = Number.parseInt(n);
+
+// let i=0;
+// do
+//   {
+//     console.log(i);
+//     i++;
+//   }while(i>=n);
+  
+ //class and object
+ class Ticket{
+   Ticket(name,age,tno)
+   {
+     this.name=name;
+     this.age=age;
+     this.tno=tno;
+
+   }
+  
+    tick(){
+     alert(this.name+'of age: '+' your ticket no is: '+this.tno+" is booked")
+     
+   }
+
+    cancel(){
+     alert(this.name+'of age: '+' your ticket no is: '+this.tno+" is cancelled")
+   }
+ }
+
+let muskan = new Ticket('muskan',22,12345)
+let mahesh = new Ticket('mahesh',20,001122)
+let arun = new Ticket('arun',21,111111)
+
+muskan.tick()
+muskan.cancel()
+
+mahesh.tick()
+mahesh.cancel()
+
+async function demo() {
+  let p1 = new Promise((resolve,reject)=>{
+  setTimeout(()=>{
+    resolve("data 1")
+  }),1000
+})
+
+let p2 = new Promise((resolve,reject)=>{
+  setTimeout(()=>{
+    resolve("data 2")
+  }),2000
+})
+  p1.then(alert)
+  p2.then(alert)
+}
+
+demo()
